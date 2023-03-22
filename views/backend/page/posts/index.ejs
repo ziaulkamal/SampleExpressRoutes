@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-12">
+        <a href="" class="btn btn-primary waves-effect waves-light mb-2"><i class="mdi mdi-file-check mr-2"></i>Create</a>
+        
+        <div class="card">
+            <div class="card-body">
+                
+                <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead>
+                    <tr>
+                        <th width="5px">No. </th>
+                        <th width="30px">Thumbnails</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>Date Post</th>
+                        <th>Options</th>
+                        
+                    </tr>
+                    </thead>
+
+
+                    <tbody>
+                    <% data.forEach(function(e){ %>
+                    <tr>
+                        <td style="text-align: center;"><%= no++ %> </td>
+                        <td><img class="rounded mr-2 mo-mb-2" alt="<%= capFirst(e.title) %> " style="width: 200px;" src="<%= '../uploads/image/' + e.file_image %> " data-holder-rendered="true">                                 </td>
+                        <td><%= capFirst(e.title) %> </td>
+                        <td><%= e.category %> </td>
+                        <td><%= e.tags %></td>
+                        <td><%= e.date.toLocaleDateString("en-EN", {year: "numeric", month: "long", day: "numeric"}) %> </td>
+                        <td>                                                       
+                            <button type="button" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                    <% }); %>
+                        
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->

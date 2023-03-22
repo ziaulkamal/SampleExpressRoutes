@@ -1,0 +1,13 @@
+            <div class="page-title-box">
+                <div class="btn-group float-right">
+                    <% if (title !== 'Dashboard') { %>
+                      <ol class="breadcrumb hide-phone p-0 m-0">
+                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                        <li class="breadcrumb-item active"><%= title %></li>
+                    </ol>
+                    <% } %>
+                   
+                </div>
+                
+                <h4 class="page-title"><%= title %></h4>
+            </div>

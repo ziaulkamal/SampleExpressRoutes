@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                
+                <p class="text-muted mb-4 font-13">To be able to see more categories when selecting a category in a post, we added a new feature called "New Category". This feature will allow users to add new categories easily and quickly. </p>
+                <div class="general-label">
+                    <form  method="POST" enctype="application/x-www-form-urlencoded">
+                        <div class="form-group">
+                            <h6 class="control-label input-title mt-0">Name Category</h6>
+                            <input class="form-control" type="text" name="title">
+                        </div>
+                        
+                        <div class="form-group">
+                            <h6 class="control-label  input-title mt-0">Slugs</h6>
+                            <input class="form-control" type="text" name="slugs" placeholder="sample-using-slug-category">
+                        </div>
+                        
+                        <div class="form-group">
+                            <h6 class="control-label  input-title mt-0">Description</h6>
+                            <textarea class="form-control" name="description"></textarea>
+                        </div>
+                        <div class="button-list">
+                            <button type="submit" class="btn btn-lg btn-primary">Add New</button>
+                            <button type="reset" class="btn btn-secondary btn-lg">Reset</button>                
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-md-9">
+        <div class="card">
+            <div class="card-body">
+                <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead>
+                    <tr>
+                        <th width="5px">No. </th>
+                        <th width="30px">Slug</th>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Total Category Use</th>
+
+                        
+                    </tr>
+                    </thead>
+
+
+                    <tbody>
+
+                        
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
